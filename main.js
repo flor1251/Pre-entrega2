@@ -30,7 +30,7 @@ function eliminarProducto(nombre) {
     //para guardar en el localStorage
     localStorage.setItem("productos", JSON.stringify(productos));
     localStorage.setItem("stock", stock);
-    // Actualizar lista de stock
+   
     actualizarListaStock();
   }
 }
@@ -38,7 +38,7 @@ function eliminarProducto(nombre) {
 function verInformes() {
   console.log("Stock total: " + stock);//solo me muestra la cantidad. no la cantidad con nombre, agregar para que detalle por producto..
   productos.forEach(p => console.log("Producto: " + p.nombre + " - Cantidad: " + p.cantidad)); //recordatorio, utilizo el metodo .forEach con la funcion flecha para que me muestre los parametros del array productos.
-  //actualizar lista de stock
+  
   actualizarListaStock();
 }
 

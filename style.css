@@ -88,3 +88,8 @@ body {
   #stock li:nth-child(odd) {
     background-color: #fff;
   }
+
+  #contenedor > *:not(#stock) {
+    text-align: center;
+  }
+  
